@@ -215,81 +215,7 @@ These objectives form the initial control baseline and are progressively tested 
 
 ---
 
-# Repository Structure
 
-The repository is organized around the final assessment rather than individual lessons.
-
-```text
-nexacore-iam-governance-assessment/
-│
-├── README.md
-├── DISCLAIMER.md
-│
-├── 01-organization/
-│   ├── organization-profile.md
-│   ├── iam-environment-register.md
-│   ├── stakeholders.md
-│   └── scope.md
-│
-├── 02-governance/
-│   ├── iam-governance-model.md
-│   ├── iam-control-objectives-register.md
-│   └── iam-raci-matrix.md
-│
-├── 03-identity-lifecycle/
-│   ├── jml-procedure.md
-│   ├── access-request-workflow.md
-│   └── identity-lifecycle-register.csv
-│
-├── 04-access-controls/
-│   ├── access-control-matrix.csv
-│   ├── role-permission-matrix.csv
-│   ├── sod-matrix.csv
-│   ├── privileged-access-register.csv
-│   └── service-account-register.csv
-│
-├── 05-access-review/
-│   ├── access-review-methodology.md
-│   ├── user-access-review.csv
-│   ├── evidence-register.csv
-│   └── control-assessment.csv
-│
-├── 06-risk-findings/
-│   ├── iam-risk-register.csv
-│   ├── findings-register.csv
-│   └── risk-analysis.md
-│
-├── 07-remediation/
-│   ├── remediation-tracker.csv
-│   ├── capa-tracker.csv
-│   └── validation-results.md
-│
-├── 08-framework-mapping/
-│   ├── iso-27001-mapping.csv
-│   └── nist-csf-mapping.csv
-│
-├── 09-reporting/
-│   ├── iam-assessment-report.md
-│   ├── executive-summary.md
-│   └── iam-kpi-kri-dashboard.csv
-│
-├── 10-portfolio/
-│   ├── case-study.md
-│   ├── linkedin-post.md
-│   ├── technical-insight.md
-│   └── infographic-concept.md
-│
-└── evidence/
-    ├── evidence-index.md
-    ├── sample-access-data.csv
-    ├── sample-mfa-report.csv
-    ├── sample-jml-data.csv
-    └── sample-privileged-access.csv
-```
-
-The repository will be populated progressively as the assessment develops.
-
----
 
 # Core Assessment Artifacts
 
@@ -320,66 +246,10 @@ Expected high-value artifacts include:
 * Executive Summary
 * IAM KPI/KRI Dashboard
 
-Only artifacts that contribute to the assessment will be retained.
+
 
 ---
 
-
-
-# Example Assessment Logic
-
-A simple IAM assessment may look like:
-
-```text
-Requirement:
-Access must be authorized.
-
-        ↓
-
-Expected Control:
-Application owner approves access before provisioning.
-
-        ↓
-
-Expected Evidence:
-Access request + approval record.
-
-        ↓
-
-Test:
-Sample user accounts and inspect approval evidence.
-
-        ↓
-
-Result:
-3 of 20 sampled accounts lacked documented approval.
-
-        ↓
-
-Finding:
-Access approval evidence is not consistently maintained.
-
-        ↓
-
-Risk:
-Unauthorized or inappropriate access may be provisioned without
-demonstrable business approval.
-
-        ↓
-
-Remediation:
-Require documented approval before provisioning and implement
-periodic exception monitoring.
-
-        ↓
-
-Validation:
-Re-test a sample after remediation.
-```
-
-This approach is used throughout the project.
-
----
 
 
 
